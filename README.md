@@ -20,11 +20,11 @@ dependencies {
 ```
 ### Jitpack
 
-    ```
-	dependencies {
-	        compile 'com.github.ragdroid:PdfBox-Android:master-SNAPSHOT'
-	}
-    ```
+```gradle
+dependencies {
+    compile 'com.github.ragdroid:PdfBox-Android:master-SNAPSHOT'
+}
+```
 
 Before calls to PDFBox are made it is **highly** recommended to initialize the library's resource loader. Add the following line before calling PDFBox methods:
 
