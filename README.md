@@ -1,5 +1,6 @@
 PdfBox-Android
 ==============
+[![](https://jitpack.io/v/ragdroid/PdfBox-Android.svg)](https://jitpack.io/#ragdroid/PdfBox-Android)
 [ ![Download](https://api.bintray.com/packages/birdbrain2/PdfBox-Android/PdfBox-Android/images/download.svg) ](https://bintray.com/birdbrain2/PdfBox-Android/PdfBox-Android/_latestVersion)
 [![Build Status](https://travis-ci.org/TomRoush/PdfBox-Android.svg?branch=master)](https://travis-ci.org/TomRoush/PdfBox-Android)
 
@@ -17,6 +18,13 @@ dependencies {
     compile 'com.tom_roush:pdfbox-android:1.8.9.1'
 }
 ```
+### Jitpack
+
+    ```
+	dependencies {
+	        compile 'com.github.ragdroid:PdfBox-Android:master-SNAPSHOT'
+	}
+    ```
 
 Before calls to PDFBox are made it is **highly** recommended to initialize the library's resource loader. Add the following line before calling PDFBox methods:
 
