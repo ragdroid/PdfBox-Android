@@ -207,13 +207,13 @@ public class PDFMergerUtility
 	 */
 	public void appendDocument(PDDocument destination, PDDocument source) throws IOException
 	{
-		if (destination.isEncrypted())
+		if (source.getDocument().isClosed())
 		{
-			throw new IOException("Error: destination PDF is encrypted, can't append encrypted PDF documents.");
+			throw new IOException("Error: source PDF is closed.");
 		}
-		if (source.isEncrypted())
+		if (destination.getDocument().isClosed())
 		{
-			throw new IOException("Error: source PDF is encrypted, can't append encrypted PDF documents.");
+			throw new IOException("Error: destination PDF is closed.");
 		}
 		
 		PDDocumentCatalog destCatalog = destination.getDocumentCatalog();
